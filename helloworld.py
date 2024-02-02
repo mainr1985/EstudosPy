@@ -1,3 +1,5 @@
+import math
+
 # hello world e estudo de definição de variáveis
 
 #frase = 'Hello World Python VS Code'
@@ -26,8 +28,17 @@ corta = palavras.strip() #equivalente ao trim() do java
 n1=10
 n2=5
 
-print (f'Dividindo {n1} por {n2} o resultado é {n1/n2}') #f (tem que ser sem o espaço depois!) consegue acessar os valores das variáveis e fazer as operações matemáticas
+#print (f'Dividindo {n1} por {n2} o resultado é {n1/n2}') #f (tem que ser sem o espaço depois!) consegue acessar os valores das variáveis e fazer as operações matemáticas
 
 #print (palavras.find('l')) #encontra um caractere na string; -1 é o resultado se buscar caractere que não exista
 #print(len(corta)) #tamanho da string
+
+#realizando cálculos
+#potenciação => 5**2 = 25
+#raiz quadrada -> usa-se bilbioteca específica do python:
+raiz = math.sqrt(81)
+print(raiz)
+
+#arredondamento -> round(variavel,número de casas)
+
 
