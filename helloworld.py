@@ -41,4 +41,31 @@ print(raiz)
 
 #arredondamento -> round(variavel,número de casas)
 
+#operadores lógicos no python:
 
+'''
+    True/False (case sensitive, 1a letra maiúscula)
+    and/& (ex: a and b)
+    or/ |
+    not 
+'''
+
+#operadores relacionais
+'''
+    == / != comparação de valores     
+'''
+
+#operadores condicionais
+'''
+    if 5>4 :  => ':' inicia um bloco. É equivalente ao then. Se não estiver identado o que deve ser feito dentro do if, não vai funcionar. não existe {}
+        print('True')
+
+    if 5>4 :
+        comando
+    else:
+        comando
+
+    if (condicao1) and/or (condicao2):
+        comando
+    
+'''
