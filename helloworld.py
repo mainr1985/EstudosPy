@@ -37,7 +37,7 @@ n2=5
 #potenciação => 5**2 = 25
 #raiz quadrada -> usa-se bilbioteca específica do python:
 raiz = math.sqrt(81)
-print(raiz)
+#print(raiz)
 
 #arredondamento -> round(variavel,número de casas)
 
@@ -69,3 +69,34 @@ print(raiz)
         comando
     
 '''
+# dicionários -> é chave-valor
+coleta = {'Aedes aegypt': 32, 'Aedes albopictus':22, 'Anopheles darlingi':14} #nome e quantidade de amostras coletadas, por exemplo.
+
+#adicionando nova entrada no dicionário:
+coleta ['Rhodnius montenegrensis'] = 11
+
+#del(coleta) apaga a variável inteira
+
+#del(coleta)['Rhodnius montenegrensis']
+#print(coleta.items()) ->imprime o dicionário completo
+
+#print(coleta.keys()) ->traz só as chaves guardadas no dicionário
+#print(coleta.values()) ->traz só os valores guardadas no dicionário
+
+coleta2 = {'Anopheles gambiae':13, 'Anopheles deaneorum':14}
+
+#atualizando um dicionário a partir de outro dicionário
+coleta.update(coleta2)
+
+#percorrendo um dicionário
+#for especie, num_especimens in coleta.items():  
+ #   print(f'Espécie: {especie}, Número de especimens coletados: {num_especimens} ')
+
+#trabalhando com sets
+biomoleculas = ('proteína', 'ácido nucleico', 'carboidrato', 'lipídio', 'ácido nucleico', 'carboidrato', 'carboidrato','carboidrato')
+#print(set(biomoleculas)) -> trará os elementos 1x, sem repetir nenhum
+
+c1 = {1,2,3,4,5}
+c2 = {3,4,5,6,7}
+c3 = c1.intersection(c2)  #exibe a interseção entre os conjuntos
+print(c1.difference(c2)) #exibe a diferença entre os conjuntos
