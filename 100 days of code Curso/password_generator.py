@@ -12,7 +12,7 @@ num_symbols = int(input("How many symbols would you like to have in your passwor
 
 random_password = []
 for n in range (1,num_letters+1):
-    random_password.append(random.choice (letters)) #percorre todo o array selecionado, escolhe aleatoriamente e coloca no novo array password
+    random_password.append(random.choice (letters)) 
         
 for n in range (1, num_numbers+1):
     random_password.append(random.choice (numbers))
@@ -23,6 +23,6 @@ for n in range (1, num_symbols+1):
 random.shuffle(random_password)
 password = ""
 for randpass in random_password:
-    password += randpass #concatenação
+    password += randpass
 
 print(f"This is your new suggested password:\n {password}")
